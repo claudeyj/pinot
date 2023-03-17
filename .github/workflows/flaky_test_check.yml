@@ -23,7 +23,6 @@ on: [push]
 jobs:
 
   Run-NonDex:
-    if: github.repository == 'apache/pinot'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
