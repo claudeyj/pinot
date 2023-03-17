@@ -23,8 +23,8 @@ import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -175,7 +175,7 @@ public class SegmentIndexCreationDriverImpl implements SegmentIndexCreationDrive
 
     // Initialize index creation
     _segmentIndexCreationInfo = new SegmentIndexCreationInfo();
-    _indexCreationInfoMap = new HashMap<>();
+    _indexCreationInfoMap = new LinkedHashMap<>(); //flaky
 
     // Check if has star tree
     _indexCreator = new SegmentColumnarIndexCreator();
@@ -398,7 +398,7 @@ public class SegmentIndexCreationDriverImpl implements SegmentIndexCreationDrive
     Set<String> varLengthDictionaryColumns = new HashSet<>(_config.getVarLengthDictionaryColumns());
     Set<String> rawIndexCreationColumns = _config.getRawIndexCreationColumns();
     Set<String> rawIndexCompressionTypeKeys = _config.getRawIndexCompressionType().keySet();
-    for (FieldSpec fieldSpec : _dataSchema.getAllFieldSpecs()) {
+    for (FieldSpec fieldSpec : _dataSchema.getAllFieldSpecs()) { // flaky
       // Ignore virtual columns
       if (fieldSpec.isVirtualColumn()) {
         continue;
