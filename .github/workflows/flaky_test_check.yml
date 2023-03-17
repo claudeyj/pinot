@@ -23,7 +23,13 @@ on: [push]
 jobs:
 
   Run-NonDex:
+    if: github.repository == 'apache/pinot'
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: echo "Repo checked out"
       - run: echo "Start running flaky test check by Nondex"
+      - name: Run NonDex
       - run: .github/workflows/scripts/.nondex.sh
+      - run: echo "NonDex check complete"
