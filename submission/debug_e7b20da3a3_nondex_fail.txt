@@ -1,0 +1,202 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< org.apache.pinot:pinot-core >---------------------
+[INFO] Building pinot-core 0.016
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex-maven-plugin:2.1.1:nondex (default-cli) > test-compile @ pinot-core >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-dependency-convergence) @ pinot-core ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ pinot-core ---
+[INFO] Executing: /bin/sh -c cd /coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core && git rev-parse --verify HEAD
+[INFO] Working directory: /coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core
+[INFO] Storing buildNumber: e7b20da3a3ef6f6a29f4c3f359aafdf96da1e134 at timestamp: 1679073667212
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd /coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core && git rev-parse --verify HEAD
+[INFO] Working directory: /coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ pinot-core ---
+[INFO] argLine set to -javaagent:/coconut/jun-data/.m2_mirror/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/target/jacoco.exec -Xms4g -Xmx4g -XX:MaxPermSize=512m -XX:MaxDirectMemorySize=10g
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pinot-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ pinot-core ---
+[INFO] Compiling 1 source file to /coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pinot-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 24 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ pinot-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex-maven-plugin:2.1.1:nondex (default-cli) < test-compile @ pinot-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex-maven-plugin:2.1.1:nondex (default-cli) @ pinot-core ---
+INFO: The original argline is: -Xms4g -Xmx4g -XX:MaxPermSize=512m -XX:MaxDirectMemorySize=10g
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_+Hju6F00D+EEZs8SRIzsRPCgpknMCpWYFlwfMySrI=
+nondexLogging=CONFIG
+test=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.104 sec - in TestSuite
+test1(org.apache.pinot.core.util.CrcUtilsTest)  Time elapsed: 3.025 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexJarDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexExecid=koNrGN65mLFGgHlP8QvdSZJGVpihKAIEHowafqcClSc=
+nondexLogging=CONFIG
+test=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.452 sec <<< FAILURE! - in TestSuite
+test1(org.apache.pinot.core.util.CrcUtilsTest)  Time elapsed: 39.364 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<3918979331> but was:<3651264771>
+	at org.apache.pinot.core.util.CrcUtilsTest.test1(CrcUtilsTest.java:62)
+
+
+Results :
+
+Failed tests: 
+  CrcUtilsTest.test1:62 expected:<3918979331> but was:<3651264771>
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+INFO: Surefire failed when running tests for koNrGN65mLFGgHlP8QvdSZJGVpihKAIEHowafqcClSc=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexJarDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexExecid=GoUW1k0zHNsIE9s9KCXmshAXzCQtha54FCu3kK1r9PE=
+nondexLogging=CONFIG
+test=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.691 sec <<< FAILURE! - in TestSuite
+test1(org.apache.pinot.core.util.CrcUtilsTest)  Time elapsed: 39.597 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<840818947> but was:<1058136323>
+	at org.apache.pinot.core.util.CrcUtilsTest.test1(CrcUtilsTest.java:62)
+
+
+Results :
+
+Failed tests: 
+  CrcUtilsTest.test1:62 expected:<840818947> but was:<1058136323>
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+INFO: Surefire failed when running tests for GoUW1k0zHNsIE9s9KCXmshAXzCQtha54FCu3kK1r9PE=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexJarDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexExecid=0qEqUKTA42B8gwXS+5gDX5RMsyYOgq2nbnEnBhsGRWY=
+nondexLogging=CONFIG
+test=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.82 sec <<< FAILURE! - in TestSuite
+test1(org.apache.pinot.core.util.CrcUtilsTest)  Time elapsed: 39.73 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<3544375555> but was:<1422123267>
+	at org.apache.pinot.core.util.CrcUtilsTest.test1(CrcUtilsTest.java:62)
+
+
+Results :
+
+Failed tests: 
+  CrcUtilsTest.test1:62 expected:<3544375555> but was:<1422123267>
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+INFO: Surefire failed when running tests for 0qEqUKTA42B8gwXS+5gDX5RMsyYOgq2nbnEnBhsGRWY=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexJarDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexExecid=koNrGN65mLFGgHlP8QvdSZJGVpihKAIEHowafqcClSc= -DnondexLogging=CONFIG
+[WARNING] org.apache.pinot.core.util.CrcUtilsTest#test1
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexJarDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexExecid=GoUW1k0zHNsIE9s9KCXmshAXzCQtha54FCu3kK1r9PE= -DnondexLogging=CONFIG
+[WARNING] org.apache.pinot.core.util.CrcUtilsTest#test1
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexJarDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexExecid=0qEqUKTA42B8gwXS+5gDX5RMsyYOgq2nbnEnBhsGRWY= -DnondexLogging=CONFIG
+[WARNING] org.apache.pinot.core.util.CrcUtilsTest#test1
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] org.apache.pinot.core.util.CrcUtilsTest#test1
+[INFO] Test results can be found at: 
+[INFO] file:///coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex/koNrGN65mLFGgHlP8QvdSZJGVpihKAIEHowafqcClSc=/test_results.html
+[INFO] [NonDex] The id of this run is: koNrGN65mLFGgHlP8QvdSZJGVpihKAIEHowafqcClSc=
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:06 min
+[INFO] Finished at: 2023-03-17T12:23:11-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.illinois:nondex-maven-plugin:2.1.1:nondex (default-cli) on project pinot-core: Unable to execute mojo: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex/koNrGN65mLFGgHlP8QvdSZJGVpihKAIEHowafqcClSc= for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
