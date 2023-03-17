@@ -31,5 +31,5 @@ jobs:
       - run: echo "Repo checked out"
       - run: echo "Start running flaky test check by Nondex"
       - name: Run NonDex
-      - run: .github/workflows/scripts/.nondex.sh
+        run: .github/workflows/scripts/.nondex.sh
       - run: echo "NonDex check complete"
