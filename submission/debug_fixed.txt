@@ -1,0 +1,192 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 5.15
+[INFO] os.detected.version.major: 5
+[INFO] os.detected.version.minor: 15
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 22.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] 
+[INFO] --------------------< org.apache.pinot:pinot-core >---------------------
+[INFO] Building Pinot Core 0.13.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex-maven-plugin:2.1.1:nondex (default-cli) > test-compile @ pinot-core >>>
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.1.2:check (checkstyle) @ pinot-core ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ pinot-core ---
+[INFO] Executing: /bin/sh -c cd /coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core && git rev-parse --verify HEAD
+[INFO] Working directory: /coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core
+[INFO] Storing buildNumber: 4774d5615f59c6a0595c13f21a8e0ea04a7cebd2 at timestamp: 1679082308790
+[INFO] Storing buildScmBranch: fix-flaky
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-dependency-convergence) @ pinot-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ pinot-core ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.6:prepare-agent (default) @ pinot-core ---
+[INFO] argLine set to -javaagent:/coconut/jun-data/.m2_mirror/repository/org/jacoco/org.jacoco.agent/0.8.6/org.jacoco.agent-0.8.6-runtime.jar=destfile=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/target/jacoco.exec,includes=org/apache/pinot/**/* -Xms4g -Xmx4g
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.6.0:process (process-resource-bundles) @ pinot-core ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.6.0:process (default) @ pinot-core ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pinot-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ pinot-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pinot-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 47 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ pinot-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex-maven-plugin:2.1.1:nondex (default-cli) < test-compile @ pinot-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex-maven-plugin:2.1.1:nondex (default-cli) @ pinot-core ---
+INFO: The original argline is: -Xms4g -Xmx4g
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_VTaxLaPN7cUSa61jrMFOSvHigpEqMfxb3kWfFEjOA=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.pinot.core.util.CrcUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.752 s - in org.apache.pinot.core.util.CrcUtilsTest
+[INFO] org.apache.pinot.core.util.CrcUtilsTest.test1  Time elapsed: 3.64 s
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexJarDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexExecid=FL10YEv2wpNsGKP+8I4s+sClLH0SERltzhcZ0FXHY=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.pinot.core.util.CrcUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.747 s - in org.apache.pinot.core.util.CrcUtilsTest
+[INFO] org.apache.pinot.core.util.CrcUtilsTest.test1  Time elapsed: 37.627 s
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexJarDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexExecid=COhIcJ+wmdtkDu3XS2uqQXQWMiEM5llLKe8Nz9WOBU=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.pinot.core.util.CrcUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.066 s - in org.apache.pinot.core.util.CrcUtilsTest
+[INFO] org.apache.pinot.core.util.CrcUtilsTest.test1  Time elapsed: 37.951 s
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexJarDir=/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex
+nondexExecid=shQrVzdnS93KtZlKqxz3wW3Nw80Hox3+4bt1UKWBJw=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.pinot.core.util.CrcUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.036 s - in org.apache.pinot.core.util.CrcUtilsTest
+[INFO] org.apache.pinot.core.util.CrcUtilsTest.test1  Time elapsed: 37.922 s
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexJarDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexExecid=FL10YEv2wpNsGKP+8I4s+sClLH0SERltzhcZ0FXHY= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexJarDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexExecid=COhIcJ+wmdtkDu3XS2uqQXQWMiEM5llLKe8Nz9WOBU= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexJarDir="/coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex" -DnondexExecid=shQrVzdnS93KtZlKqxz3wW3Nw80Hox3+4bt1UKWBJw= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///coconut/jun-data/flaky_test/repo/workspace/pinot/pinot-core/.nondex/FL10YEv2wpNsGKP+8I4s+sClLH0SERltzhcZ0FXHY=/test_results.html
+[INFO] [NonDex] The id of this run is: FL10YEv2wpNsGKP+8I4s+sClLH0SERltzhcZ0FXHY=
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:06 min
+[INFO] Finished at: 2023-03-17T14:47:09-05:00
+[INFO] ------------------------------------------------------------------------
