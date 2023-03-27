@@ -51,3 +51,4 @@ kubernetes/helm/**/charts/
 kubernetes/helm/**/requirements.lock
 kubernetes/helm/**/Chart.lock
 
+!submission/ci-build.log
